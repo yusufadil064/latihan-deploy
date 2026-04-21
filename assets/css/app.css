@@ -1,0 +1,99 @@
+/* Gaya tata letak aplikasi (Dashboard) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+/* Tampilan Sidebar Kiri */
+.sidebar {
+    width: 250px;
+    background: #343a40; /* Warna gelap default untuk User */
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar.admin-theme {
+    background: #2c3e50; /* Warna kebiruan khusus Admin */
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.sidebar-menu li a {
+    display: block;
+    padding: 15px 25px;
+    color: #c2c7d0;
+    text-decoration: none;
+    transition: 0.3s;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-menu li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-left: 3px solid #667eea;
+}
+
+/* Konten Utama Kanan */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.navbar {
+    background: white;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-logout {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-logout:hover { background: #c82333; }
+
+.content {
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #333;
+}
